@@ -12,7 +12,7 @@ const Heading = (props: Props) => {
                 {props.title}
             </span>
             <p className="font-(family-name:--font-display) text-4xl font-medium leading-12 max-w-xl">{props.sub_title}</p>
-            <p className="text-(--text-dim) text-sm">{props.desc}</p>
+            <p className="text-(--text-dim) text-sm -mt-2">{props.desc}</p>
         </div>
     )
 }
