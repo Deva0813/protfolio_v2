@@ -1,6 +1,7 @@
 import { empTypeConstant, experienceConstants } from "@/lib/data"
 import { clsx } from "clsx"
 import { Plus } from "lucide-react"
+import Heading from "../Common/Heading"
 
 type Props = {}
 
@@ -22,15 +23,13 @@ const ExperienceSection = (props: Props) => {
         .sort((a, b) => new Date(b.start_date).getTime() - new Date(a.start_date).getTime())
 
     return (
-        <div className='' id="experience" >
+        <div className='border-b border-(--border)' id="experience" >
             <div className="section_container grid  sm:px-6 px-4 pt-23 py-16 gap-5">
-                <div className="grid gap-5">
-                    <span className="inline-flex items-center gap-2 font-mono text-[12.5px] uppercase tracking-[0.08em] text-(--gold) before:h-1.5 before:w-1.5 before:rounded-full before:bg-(--gold) before:shadow-[0_0_8px_var(--gold)] before:content-[''] before:animate-pulse">
-                        Experience
-                    </span>
-                    <p className="font-(family-name:--font-display) text-4xl font-medium leading-12 max-w-xl">Shipped my way from junior dev to leading the team.</p>
-                    <p className="text-(--text-dim)">Every role, every internship, one continuous climb.</p>
-                </div>
+                <Heading
+                    title="Experience"
+                    sub_title="Shipped my way from junior dev to leading the team."
+                    desc="Every role, every internship, one continuous climb."
+                />
                 <div className="grid grid-cols-[auto_1fr] mt-8 ml-2">
                     <div className="bg-linear-180 from-(--accent-strong) to-transparent w-0.5"></div>
                     <div className="grid gap-10 pl-6 -mt-2">
@@ -54,10 +53,10 @@ const ExperienceSection = (props: Props) => {
                                             exp.location
                                         }</p>
 
-                                    <ul className="list-disc  text-(--text-muted) text-sm list-inside ">
+                                    <ul className="list-disc space-y-2! text-(--text-muted) text-sm list-inside ">
                                         {
                                             exp.description_points.map((point, index) => (
-                                                <li key={index} className="mb-1 list-none flex "> <Plus size={12} className="mt-1 mr-2 text-(--accent-strong)" />  {point}</li>
+                                                <li key={index} className="mb-1 list-none grid grid-cols-[auto_1fr] max-w-4xl"> <Plus size={12} className="mt-1 mr-2 text-(--accent-strong)" />  {point}</li>
                                             ))
                                         }
                                     </ul>
