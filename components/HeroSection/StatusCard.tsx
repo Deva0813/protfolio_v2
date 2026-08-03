@@ -54,7 +54,7 @@ export function StatusCard() {
 
             <div className="mt-4 flex justify-between border-t border-(--border) pt-3.5 text-[11.5px] text-(--text-dim)">
                 <span>team scaled 2 → 6 devs</span>
-                <span>3 salary hikes</span>
+                <span>3+ projects</span>
             </div>
         </div>
     )

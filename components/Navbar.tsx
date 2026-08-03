@@ -16,7 +16,7 @@ const Navbar = (props: Props) => {
             <div className="flex section_container items-center justify-between px-4! sm:px-6! py-4!">
                 <div className="">
                     <Link href={"/"} className="flex items-baseline gap-1.5 font-(family-name:--font-display)! text-[19px]">
-                        Devanand M <span className="text-(--accent-strong) font-mono text-sm  ">/dev</span>
+                        Deva<span className="text-(--accent-strong) font-mono text-sm  ">/dev</span>
                     </Link>
                 </div>
                 <div className="hidden gap-8 text-sm text-(--text-muted) md:flex">
