@@ -123,3 +123,61 @@ export const experienceConstants: {
 export const empTypeConstant = {
     "full-time": "Full-Time", "part-time": "Part-Time", "internship": "Intern", "freelance": "Freelance", "contract": "Contract"
 }
+
+export const projectConstant: {
+    title: string,
+    desc: string,
+    tech_stack: string[],
+    sub: string
+}[] = [
+        {
+            title: "ProEdge",
+            desc: "AI-powered e-learning platform — students purchase courses and attend live sessions. OpenAI auto-generates learning content and assessments from instructor input, with Razorpay payments and Celery/Redis for async processing.",
+            tech_stack: [
+                "Next.js",
+                "FastAPI",
+                "MongoDB",
+                "OpenAI",
+                "Razorpay",
+                "AWS",
+            ],
+            sub: "e-learning"
+        }, {
+            title: "CRM Hub",
+            desc: "Centralized lead management capturing leads from Meta Ads and web forms. Round-robin allocation, activity logs, and automated ETL pipelines syncing conversion data back to marketing for attribution.",
+            tech_stack: ["Next.js",
+                "FastAPI",
+                "MongoDB",
+                "Redis",
+                "GenAI", "ETL"],
+            sub: "crm"
+        }, {
+            title: "CMS Hub",
+            desc: "Web-based helpdesk and ticket management system streamlining support workflows, with automated SLA/TAT alerts, email notifications, and schedulers.",
+            tech_stack: [
+                "Next.js",
+                "Flask",
+                "MySQL",
+                "Google AppScript",
+            ],
+            sub: "helpdesk"
+        }, {
+            title: "Pigeon",
+            desc: "This Saas application offers essential gaming functionalities, facilitates user communication, and resolves friend management challenges within the Unity engine.",
+            tech_stack: [
+                "Next.js", "Express.js", "MongoDB", "AWS"
+            ],
+            sub: "admin panel"
+        },
+        {
+            title: "Real-time Sign Language Translator",
+            desc: "A virtual-camera plug-in that bridges communication between hearing and specially-abled individuals via object detection — works in any video conferencing app.",
+            tech_stack: [
+                "Flask",
+                "Deep Learning",
+                "Computer Vision",
+                "ML"
+            ],
+            sub: "accessibility"
+        }
+    ]
