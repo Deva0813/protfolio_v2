@@ -186,36 +186,99 @@ export const skillsConstants: {
     title: string,
     skills: string[]
 }[] = [
-    {
-        title: "Languages & Markup",
-        skills: ["Python", "TypeScript", "JavaScript", "Java", "HTML5"]
-    },
-    {
-        title: "Frontend & Libraries",
-        skills: ["React.js", "Next.js", "Tailwind CSS", "Framer Motion", "React Query", "Zustand", "Recharts"]
-    },
-    {
-        title: "Backend & APIs",
-        skills: ["FastAPI", "Flask", "Express.js", "Celery","Oauth"]
-    },
-    {
-        title: "Databases & Caching",
-        skills: ["MySQL", "MongoDB", "Redis", "RDS"]
-    },
-    {
-        title: "Cloud & DevOps",
-        skills: ["AWS", "Docker", "CI/CD", "Git", "GitHub", "Jira","EC2","SES","S3","Amplify"]
-    },
-    {
-        title: "Data & Distributed Processing",
-        skills: ["PySpark","ETL pipelines"]
-    },
-    {
-        title: "AI & LLM Engineering",
-        skills: ["OpenAI", "Claude Code", "RAG", "AI Agent Workflows", "LLM", "LangChain"]
-    },
-    {
-        title: "Automation & Analytics",
-        skills: ["n8n", "Windsor.ai", "Google Analytics", "GTM", "Meta CAPI"]
-    }
-]
+        {
+            title: "Languages & Markup",
+            skills: ["Python", "TypeScript", "JavaScript", "Java", "HTML5"]
+        },
+        {
+            title: "Frontend & Libraries",
+            skills: ["React.js", "Next.js", "Tailwind CSS", "Framer Motion", "React Query", "Zustand", "Recharts"]
+        },
+        {
+            title: "Backend & APIs",
+            skills: ["FastAPI", "Flask", "Express.js", "Celery", "Oauth"]
+        },
+        {
+            title: "Databases & Caching",
+            skills: ["MySQL", "MongoDB", "Redis", "RDS"]
+        },
+        {
+            title: "Cloud & DevOps",
+            skills: ["AWS", "Docker", "CI/CD", "Git", "GitHub", "Jira", "EC2", "SES", "S3", "Amplify"]
+        },
+        {
+            title: "Data & Distributed Processing",
+            skills: ["PySpark", "ETL pipelines"]
+        },
+        {
+            title: "AI & LLM Engineering",
+            skills: ["OpenAI", "Claude Code", "RAG", "AI Agent Workflows", "LLM", "LangChain"]
+        },
+        {
+            title: "Automation & Analytics",
+            skills: ["n8n", "Windsor.ai", "Google Analytics", "GTM", "Meta CAPI"]
+        }
+    ]
+
+export const educationConstants: {
+    degree: string,
+    institution: string,
+    start_date: string,
+    end_date: string,
+    gpa: string,
+}[] = [
+
+        {
+            degree: "B.E. Computer Science & Engineering",
+            institution: "Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College",
+            start_date: "2019",
+            end_date: "2023",
+            gpa: "9.09 GPA"
+        },
+        {
+            degree: "HSC",
+            institution: "Ramakrishna Mission Matriculation HSS",
+            start_date: "2018",
+            end_date: "2019",
+            gpa: "72%"
+        }, {
+            degree: "SSLC",
+            institution: "Ramakrishna Mission Matriculation HSS",
+            start_date: "2016",
+            end_date: "2017",
+            gpa: "84.4%"
+        }
+
+    ]
+
+export const certificationConstants: {
+    title: string,
+    organization: string,
+    issue_date: string,
+}[] = [
+        {
+            title: "AI Engineer Core Track - LLM Engineering, RAG, QLoRA, Agents",
+            organization: "Udemy",
+            issue_date: "2026"
+        },
+        {
+            title: "Introduction to agent skills",
+            organization: "Anthropic",
+            issue_date: "2026"
+        }, {
+            title: "Oracle Certified Java Associate",
+            organization: "Oracle",
+            issue_date: "2023"
+        }, {
+            title: "Nalaiyathiran",
+            organization: "IBM & ICT Academy",
+            issue_date: "2023"
+        }, {
+            title: "The Complete 2022 Web Development Bootcamp",
+            organization: "Udemy",
+            issue_date: "2022"
+        }, {
+            title: "100 Days of Code: Python Pro Bootcamp",
+            organization: "Udemy",
+            issue_date: "2022"
+        }]

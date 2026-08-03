@@ -23,7 +23,7 @@ const ExperienceSection = (props: Props) => {
         .sort((a, b) => new Date(b.start_date).getTime() - new Date(a.start_date).getTime())
 
     return (
-        <div className='border-b border-(--border)' id="experience" >
+        <div className='' id="experience" >
             <div className="section_container grid  sm:px-6 px-4 pt-23 py-16 gap-5">
                 <Heading
                     title="Experience"
@@ -49,7 +49,7 @@ const ExperienceSection = (props: Props) => {
                                     </h4>
                                     <p className="text-(--accent-strong) -mt-2 text-sm font-medium">{
                                         exp.company_name
-                                    } · {
+                                    } &nbsp;•&nbsp; {
                                             exp.location
                                         }</p>
 
