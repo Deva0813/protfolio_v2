@@ -1,0 +1,102 @@
+@import "tailwindcss";
+ 
+:root{
+  --radius: 14px;
+  --radius-sm: 6px;
+  --maxw: 1120px;
+ 
+  --font-display: 'Fraunces', serif;
+  --font-body: 'Inter', sans-serif;
+  --font-mono: 'JetBrains Mono', monospace;
+}
+ 
+/* ---------------------------------------------------------------------- */
+/* Dark theme (default)                                                   */
+/* ---------------------------------------------------------------------- */
+:root,
+.dark{
+  --bg: #0d1712;
+  --bg-elevated: #132019;
+  --surface: #182920;
+  --surface-2: #1f342a;
+ 
+  --border: rgba(241,238,228,0.09);
+  --border-strong: rgba(241,238,228,0.16);
+ 
+  --text: #f3f1e6;
+  --text-muted: #a3b3a7;
+  --text-dim: #6f8277;
+ 
+  --accent: #5c9270;
+  --accent-strong: #7fb890;
+  --accent-dim: rgba(92,146,112,0.14);
+ 
+  --gold: #d1a35c;
+  --gold-dim: rgba(209,163,92,0.14);
+ 
+  --shadow-card: 0 30px 60px -20px rgba(0,0,0,0.5);
+  --shadow-card-sm: 0 20px 40px -20px rgba(0,0,0,0.5);
+ 
+  --btn-primary-text: #0d1712;
+  --nav-bg: rgba(13,23,18,0.82);
+ 
+  color-scheme: dark;
+}
+ 
+/* ---------------------------------------------------------------------- */
+/* Light theme                                                            */
+/* ---------------------------------------------------------------------- */
+.light{
+  --bg: #faf8f2;
+  --bg-elevated: #f2efe4;
+  --surface: #ffffff;
+  --surface-2: #f0ede2;
+ 
+  --border: rgba(20,30,24,0.09);
+  --border-strong: rgba(20,30,24,0.16);
+ 
+  --text: #16211a;
+  --text-muted: #5c6b60;
+  --text-dim: #8b978e;
+ 
+  --accent: #3f6b52;
+  --accent-strong: #2f4b3a;
+  --accent-dim: rgba(63,107,82,0.10);
+ 
+  --gold: #b3803a;
+  --gold-dim: rgba(179,128,58,0.12);
+ 
+  --shadow-card: 0 24px 48px -24px rgba(22,33,26,0.18);
+  --shadow-card-sm: 0 16px 32px -20px rgba(22,33,26,0.16);
+ 
+  --btn-primary-text: #faf8f2;
+  --nav-bg: rgba(250,248,242,0.82);
+ 
+  color-scheme: light;
+}
+ 
+/* ---------------------------------------------------------------------- */
+/* Reset / base                                                           */
+/* ---------------------------------------------------------------------- */
+*{ box-sizing: border-box; margin: 0; padding: 0; }
+html{ scroll-behavior: smooth; }
+body{
+  background: var(--bg);
+  color: var(--text);
+  font-family: var(--font-body);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  transition: background-color .25s ease, color .25s ease;
+}
+a{ color: inherit; text-decoration: none; }
+::selection{ background: var(--accent-dim); color: var(--accent-strong); }
+ 
+@media (prefers-reduced-motion: reduce){
+  *{ animation: none !important; transition: none !important; }
+}
+ 
+
+/* ---------------------------------------------------------------------- */
+/* Custom classes                                                         */
+/* ---------------------------------------------------------------------- */
+
