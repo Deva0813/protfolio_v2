@@ -282,3 +282,28 @@ export const certificationConstants: {
             organization: "Udemy",
             issue_date: "2022"
         }]
+
+export const contactConstants = {
+    email: {
+
+        value: "devanand151101@gmail.com",
+        link: "mailto:devanand151101@gmail.com"
+    },
+    phone: {
+        value: "+91 9176204928",
+        link: "tel:+919176204928"
+    },
+    linkedin: {
+        value: "linkedin.com/in/devanand-m-9a22351b3",
+        link: "https://www.linkedin.com/in/devanand-m-9a22351b3"
+    },
+    github: {
+        value: "github.com/Deva0813",
+        link: "https://github.com/Deva0813"
+
+    },
+    old_portfolio: {
+        value: "portfolio",
+        link: "https://deva0813.github.io/portfolio/"
+    }
+}

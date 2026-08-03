@@ -2,6 +2,7 @@ import Navbar from "@/components/Navbar";
 import { fraunces, inter, jetbrainsMono } from "@/lib/fonts";
 import type { Metadata } from "next";
 import "./globals.css";
+import Footer from "@/components/Footer";
 
 
 
@@ -35,7 +36,9 @@ export default function RootLayout({
       </head>
       <body className="min-h-full flex flex-col">
         <Navbar />
-        {children}</body>
+        {children}
+        <Footer/>
+        </body>
     </html>
   );
 }
