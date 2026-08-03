@@ -15,12 +15,12 @@ const SkillSection = (props: Props) => {
                 <div className="grid grid-cols-3 gap-10 mt-8">
                     {
                         skillsConstants.map((skill, index) => {
-                            return <div className="">
+                            return <div className="" key={index}>
                                 <h3 className="text-xs font-medium font-mono uppercase text-(--gold)">{skill.title}</h3>
                                 <div className="flex flex-wrap gap-2 mt-2">
-                                    { skill.skills.map((s, i) => {
+                                    {skill.skills.map((s, i) => {
                                         return <span key={i} className="rounded-sm px-3 py-1 border border-(--border) bg-(--accent-dim) text-[.8rem] text-(--text-muted)">{s}</span>
-                                    }) }
+                                    })}
                                 </div>
                             </div>
                         })
