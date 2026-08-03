@@ -27,7 +27,7 @@ const Navbar = (props: Props) => {
                     ))}
                 </div>
                 <div className="flex gap-1.5">
-                    <Link href={"/"} className="grid place-content-center text-xs font-mono border-(--border-strong) px-4! py-2.5!  rounded-full  border">
+                    <Link href={"/"} className="grid place-content-center text-[.7813rem] font-mono border-(--border-strong) px-4! py-2.5! transition-all hover:border-(--accent) hover:bg-(--accent-dim) hover:text-(--accent-strong) text-(--text)  rounded-full  border">
                         Get in Touch
                     </Link>
                     <ThemeToggleButton />
