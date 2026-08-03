@@ -49,7 +49,7 @@ const ExperienceSection = (props: Props) => {
                                     </h4>
                                     <p className="text-(--accent-strong) -mt-2 text-sm font-medium">{
                                         exp.company_name
-                                    } · {
+                                    } &nbsp;•&nbsp; {
                                             exp.location
                                         }</p>
 

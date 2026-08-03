@@ -1,4 +1,4 @@
-import EductionCertSection from "@/components/EducationCert/EductionCertSection";
+import EducationCertSection from "@/components/EducationCert/EducationCertSection";
 import ExperienceSection from "@/components/Experience/ExperienceSection";
 import HeroSection from "@/components/HeroSection/HeroSection";
 import ProjectSection from "@/components/Projects/ProjectSection";
@@ -11,7 +11,7 @@ export default function Home() {
       <ExperienceSection />
       <ProjectSection />
       <SkillSection/>
-      <EductionCertSection/>
+      <EducationCertSection/>
     </main>
   );
 }
