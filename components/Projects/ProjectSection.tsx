@@ -14,7 +14,7 @@ const ProjectSection = (props: Props) => {
                     desc="A mix of work and personal builds."
                 />
 
-                <div className="grid grid-cols-2 gap-5">
+                <div className="grid grid-cols-2 gap-5 mt-8">
                     {
                         projectConstant.map((item, index) => {
                             return <ProjectCard {...item} index={index} key={index} />

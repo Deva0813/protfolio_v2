@@ -11,7 +11,7 @@ export const statsConstants: {
             value: "5+",
         },
         {
-            name: "CGPA, B.E. CSE",
+            name: "GPA, B.E. CSE",
             value: "9.09",
         },
         {
@@ -181,3 +181,41 @@ export const projectConstant: {
             sub: "accessibility"
         }
     ]
+
+export const skillsConstants: {
+    title: string,
+    skills: string[]
+}[] = [
+    {
+        title: "Languages & Markup",
+        skills: ["Python", "TypeScript", "JavaScript", "Java", "HTML5"]
+    },
+    {
+        title: "Frontend & Libraries",
+        skills: ["React.js", "Next.js", "Tailwind CSS", "Framer Motion", "React Query", "Zustand", "Recharts"]
+    },
+    {
+        title: "Backend & APIs",
+        skills: ["FastAPI", "Flask", "Express.js", "Celery","Oauth"]
+    },
+    {
+        title: "Databases & Caching",
+        skills: ["MySQL", "MongoDB", "Redis", "RDS"]
+    },
+    {
+        title: "Cloud & DevOps",
+        skills: ["AWS", "Docker", "CI/CD", "Git", "GitHub", "Jira","EC2","SES","S3","Amplify"]
+    },
+    {
+        title: "Data & Distributed Processing",
+        skills: ["PySpark","ETL pipelines"]
+    },
+    {
+        title: "AI & LLM Engineering",
+        skills: ["OpenAI", "Claude Code", "RAG", "AI Agent Workflows", "LLM", "LangChain"]
+    },
+    {
+        title: "Automation & Analytics",
+        skills: ["n8n", "Windsor.ai", "Google Analytics", "GTM", "Meta CAPI"]
+    }
+]
