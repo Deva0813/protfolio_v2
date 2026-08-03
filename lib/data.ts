@@ -9,11 +9,11 @@ export const statsConstants = [
         value: "5+",
     },
     {
-        name: "Certifications",
-        value: "10+",
+        name: "CGPA, B.E. CSE",
+        value: "9.09",
     },
     {
-        name: "GPA",
-        value: "9.09",
+        name: "Certifications",
+        value: "10+",
     },
 ]
