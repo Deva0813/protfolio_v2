@@ -1,11 +1,10 @@
-import { ThemeToggleButton } from "@/components/ThemeToggleButton";
+import HeroSection from "@/components/HeroSection/HeroSection";
 
 export default function Home() {
   return (
-    <div className="">
+    <main className="">
+      <HeroSection />
 
-      
-
-    </div>
+    </main>
   );
 }
