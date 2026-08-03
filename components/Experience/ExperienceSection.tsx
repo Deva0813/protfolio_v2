@@ -24,7 +24,7 @@ const ExperienceSection = (props: Props) => {
 
     return (
         <div className='' id="experience" >
-            <div className="section_container grid  sm:px-6 px-4 pt-23 py-16 gap-5">
+            <div className="section_container grid  sm:px-6 px-4  py-16 gap-5">
                 <Heading
                     title="Experience"
                     sub_title="Shipped my way from junior dev to leading the team."

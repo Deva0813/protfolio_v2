@@ -6,7 +6,7 @@ type Props = {}
 const SkillSection = (props: Props) => {
     return (
         <div id="skills">
-            <div className="section_container grid  sm:px-6 px-4 pt-23 py-16 gap-5">
+            <div className="section_container grid  sm:px-6 px-4 py-16 gap-5">
                 <Heading
                     title="Skills"
                     sub_title="The stack, end to end."

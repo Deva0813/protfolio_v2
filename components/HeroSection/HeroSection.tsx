@@ -7,7 +7,7 @@ type Props = {}
 const HeroSection = (props: Props) => {
     return (
         <div className='' >
-            <div className="section_container grid sm:grid-cols-2 sm:px-6 px-4 pt-23 py-16">
+            <div className="section_container grid sm:grid-cols-2 sm:px-6 px-4 py-16">
                 <div className="">
                     <span className="inline-flex items-center gap-2 font-mono text-[12.5px] uppercase tracking-[0.08em] text-(--gold) before:h-1.5 before:w-1.5 before:rounded-full before:bg-(--gold) before:shadow-[0_0_8px_var(--gold)] before:content-[''] before:animate-pulse">
                         Chennai, India · Open to opportunities
