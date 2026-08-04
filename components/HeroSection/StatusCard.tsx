@@ -38,10 +38,10 @@ export function StatusCard() {
             }}
             transition={{
                 duration: 0.8,
-                ease: [0.22, 1, 0.36, 1], 
-            }} 
+                ease: [0.22, 1, 0.36, 1],
+            }}
             style={{
-                willChange:"transform"
+                willChange: "transform"
             }}
             className=" max-w-100 rounded-(--radius) border border-(--border) bg-linear-to-b from-(--surface) to-(--bg-elevated) p-5.5 font-mono text-[13px] shadow-(--shadow-card-sm)">
             <div className="mb-3.5 flex items-center justify-between border-b border-(--border) pb-3.5">
