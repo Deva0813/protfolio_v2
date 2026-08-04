@@ -9,6 +9,43 @@ import Footer from "@/components/Footer";
 export const metadata: Metadata = {
   title: "Deva's Portfolio",
   description: "Devanand M — Full Stack Engineer | React | Next.js | Node.js | TypeScript | Tailwind CSS",
+  keywords: [
+    "Devanand M",
+    "Full Stack Engineer",
+    "React",
+    "Next.js",
+    "Node.js",
+    "TypeScript",
+    "Tailwind CSS",
+    "2.5+ years",
+    "AWS",
+    "Github"
+  ],
+  authors: [{ name: "Devanand M", url: "https://deva0813.github.io/protfolio_v2" }],
+  metadataBase: new URL("https://deva0813.github.io"),
+  openGraph: {
+    type: "website",
+    title: "Deva's Portfolio",
+    description: "Devanand M — Full Stack Engineer | React | Next.js | Node.js | TypeScript | Tailwind CSS",
+    url: "https://deva0813.github.io/protfolio_v2",
+    siteName: "Deva's Portfolio",
+    images: [
+      {
+        url: "https://deva0813.github.io/protfolio_v2/meta.png",
+        alt: "Deva's Portfolio",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Deva's Portfolio",
+    description: "Devanand M — Full Stack Engineer | React | Next.js | Node.js | TypeScript | Tailwind CSS",
+    images: ["https://deva0813.github.io/protfolio_v2/meta.png"],
+  },
+  icons: {
+    icon: "/favicon.ico",
+    apple: "/apple-touch-icon.png",
+  },
 };
 
 const themeScript = `
