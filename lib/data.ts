@@ -131,7 +131,7 @@ export const projectConstant: {
     sub: string
 }[] = [
         {
-            title: "ProEdge",
+            title: "AI Learning Platform",
             desc: "AI-powered e-learning platform — students purchase courses and attend live sessions. OpenAI auto-generates learning content and assessments from instructor input, with Razorpay payments and Celery/Redis for async processing.",
             tech_stack: [
                 "Next.js",
@@ -143,7 +143,7 @@ export const projectConstant: {
             ],
             sub: "e-learning"
         }, {
-            title: "CRM Hub",
+            title: "Lead Management Platform",
             desc: "Centralized lead management capturing leads from Meta Ads and web forms. Round-robin allocation, activity logs, and automated ETL pipelines syncing conversion data back to marketing for attribution.",
             tech_stack: ["Next.js",
                 "FastAPI",
@@ -152,7 +152,7 @@ export const projectConstant: {
                 "GenAI", "ETL"],
             sub: "crm"
         }, {
-            title: "CMS Hub",
+            title: "Support & Ticketing Platform",
             desc: "Web-based helpdesk and ticket management system streamlining support workflows, with automated SLA/TAT alerts, email notifications, and schedulers.",
             tech_stack: [
                 "Next.js",
