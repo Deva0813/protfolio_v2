@@ -1,4 +1,5 @@
-'use client'
+"use client"
+import { Motiondiv } from '@/utils/motion'
 import { useEffect, useState } from 'react'
 
 const chips = ['FastAPI', 'Next.js', 'MongoDB', 'Redis', 'Celery', 'AWS', 'RAG / GenAI']
@@ -19,7 +20,30 @@ export function StatusCard() {
     }, [])
 
     return (
-        <div className=" max-w-100 rounded-(--radius) border border-(--border) bg-linear-to-b from-(--surface) to-(--bg-elevated) p-5.5 font-mono text-[13px] shadow-(--shadow-card-sm)">
+        <Motiondiv initial={{
+            opacity: 0,
+            y: 120,
+            scale: 0.95,
+            filter: "blur(12px)",
+        }}
+            whileInView={{
+                opacity: 1,
+                y: 0,
+                scale: 1,
+                filter: "blur(0px)",
+            }}
+            viewport={{
+                once: true,
+                amount: 0.4,
+            }}
+            transition={{
+                duration: 0.8,
+                ease: [0.22, 1, 0.36, 1], 
+            }} 
+            style={{
+                willChange:"transform"
+            }}
+            className=" max-w-100 rounded-(--radius) border border-(--border) bg-linear-to-b from-(--surface) to-(--bg-elevated) p-5.5 font-mono text-[13px] shadow-(--shadow-card-sm)">
             <div className="mb-3.5 flex items-center justify-between border-b border-(--border) pb-3.5">
                 <div className="flex items-center gap-2 text-[10.5px] uppercase tracking-[0.08em] text-(--text-dim)">
                     <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-(--accent-strong) shadow-[0_0_10px_var(--accent-strong)" />
@@ -56,6 +80,6 @@ export function StatusCard() {
                 <span>team scaled 2 → 6 devs</span>
                 <span>3+ projects</span>
             </div>
-        </div>
+        </Motiondiv>
     )
 }
