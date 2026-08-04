@@ -26,7 +26,7 @@ export function ScrambleTextLoop({
   words,
   scrambleDuration = 1.0,
   holdDuration = 2.0,
-  speed = 0.04,
+  speed = 0.05,
   characterSet = DEFAULT_CHARS,
   className = "",
 }: ScrambleTextLoopProps) {
