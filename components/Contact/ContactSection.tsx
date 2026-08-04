@@ -1,4 +1,4 @@
-import { LinkButton } from "../Buttons"
+import { LinkButton } from "../Common/Buttons"
 
 type Props = {}
 

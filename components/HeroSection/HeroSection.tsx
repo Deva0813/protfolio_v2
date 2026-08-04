@@ -1,5 +1,5 @@
 import { statsConstants } from "@/lib/data"
-import { LinkButton } from "../Buttons"
+import { LinkButton } from "../Common/Buttons"
 import { StatusCard } from "./StatusCard"
 
 type Props = {}

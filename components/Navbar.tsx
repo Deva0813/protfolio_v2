@@ -1,5 +1,6 @@
 import { ThemeToggleButton } from "@/components/ThemeToggleButton";
 import Link from "next/link";
+import { NavLinks } from "./Common/Buttons";
 
 type Props = {}
 
@@ -20,11 +21,7 @@ const Navbar = (props: Props) => {
                     </Link>
                 </div>
                 <div className="hidden gap-8 text-sm text-(--text-muted) md:flex">
-                    {links.map((l) => (
-                        <Link key={l.href} href={l.href} className="transition-colors hover:text-(--text)!">
-                            {l.label}
-                        </Link>
-                    ))}
+                    {links.map((l) => <NavLinks text={l.label} href={l.href} key={l.label} /> )}
                 </div>
                 <div className="flex gap-1.5 items-center">
                     <Link href={"/"} className="grid place-content-center text-[.7813rem] font-mono border-(--border-strong) px-4! py-2! transition-all hover:border-(--accent) hover:bg-(--accent-dim) hover:text-(--accent-strong) text-(--text)  rounded-full  border">
