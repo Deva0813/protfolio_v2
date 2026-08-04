@@ -192,11 +192,11 @@ export const skillsConstants: {
         },
         {
             title: "Frontend & Libraries",
-            skills: ["React.js", "Next.js", "Tailwind CSS", "Framer Motion", "React Query", "Zustand", "Recharts"]
+            skills: ["React.js", "Next.js", "Recharts", "Motion", "Tailwind CSS", "React Query", "Zustand"]
         },
         {
             title: "Backend & APIs",
-            skills: ["FastAPI", "Flask", "Express.js", "Celery", "Oauth"]
+            skills: ["FastAPI", "Flask", "Express.js", "Celery", "Oauth", "REST APIs"]
         },
         {
             title: "Databases & Caching",

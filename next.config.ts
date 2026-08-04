@@ -5,13 +5,14 @@ const repositoryName = "protfolio_v2";
 
 const nextConfig: NextConfig = {
 
-  output: "export",
-
-  images: {
-    unoptimized: true,
-  },
-
-  basePath:`/${repositoryName}`
+  ...(isProd ? {
+    output: "export",
+    images: {
+      unoptimized: true,
+    },
+    basePath: `/${repositoryName}`,
+    trailingSlash: false
+  } : {})
 
 };
 
