@@ -1,4 +1,5 @@
 import { statsConstants } from "@/lib/data"
+import { MotionP, MotionSpan } from "@/utils/motion"
 import { LinkButton } from "../Common/Buttons"
 import { StatusCard } from "./StatusCard"
 
@@ -13,15 +14,91 @@ const HeroSection = (props: Props) => {
                         Chennai, India · Open to opportunities
                     </span>
                     <h1 className="my-5 font-(family-name:--font-display) text-[clamp(34px,4.6vw,54px)] font-semibold leading-[1.08] tracking-[-0.04em]">
-                        Full stack engineer,
+                        {"Full stack engineer,".split(" ").map((word, i) => (
+                            <MotionSpan
+                                key={i}
+                                className="inline-block mr-2"
+                                initial={{
+                                    opacity: 0,
+                                    y: 10,
+                                    filter: "blur(12px)",
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                    filter: "blur(0px)"
+                                }}
+                                transition={{
+                                    duration: 0.5,
+                                    delay: i * 0.1,
+                                    ease: "easeOut",
+                                }}
+                                viewport={{ once: true }}
+                            >
+                                {word}
+                            </MotionSpan>
+                        ))}
                         <br />
-                        <em className="font-normal italic text-(--accent-strong)">shipping AI-native</em> products end to end.
+                        <em className="font-normal italic text-(--accent-strong)">{"shipping AI-native".split(" ").map((word, i) => (
+                            <MotionSpan
+                                key={i}
+                                className="inline-block mr-2"
+                                initial={{
+                                    opacity: 0,
+                                    y: 10,
+                                    filter: "blur(12px)",
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                    filter: "blur(0px)"
+                                }}
+                                transition={{
+                                    duration: 0.5,
+                                    delay: (i * 0.1) + 0.3,
+                                    ease: "easeOut",
+                                }}
+                                viewport={{ once: true }}
+                            >
+                                {word}
+                            </MotionSpan>
+                        ))}</em> {"products end to end.".split(" ").map((word, i) => (
+                            <MotionSpan
+                                key={i}
+                                className="inline-block mr-2"
+                                initial={{
+                                    opacity: 0,
+                                    y: 10,
+                                    filter: "blur(12px)",
+                                }}
+                                whileInView={{
+                                    opacity: 1,
+                                    y: 0,
+                                    filter: "blur(0px)"
+                                }}
+                                transition={{
+                                    duration: 0.5,
+                                    delay: (i * 0.1) + 0.5,
+                                    ease: "easeOut",
+                                }}
+                                viewport={{ once: true }}
+                            >
+                                {word}
+                            </MotionSpan>
+                        ))}
                     </h1>
 
-                    <p className="mb-7 max-w-120 text-[16.5px] text-(--text-muted)">
+                    <MotionP initial={{ opacity: 0 }} whileInView={{
+                        opacity: 1
+                    }} transition={{
+                        duration: 0.5,
+                        delay: 1,
+                        ease: "easeOut",
+                    }}
+                        viewport={{ once: true }} className="mb-7 max-w-120 text-[16.5px] text-(--text-muted)">
                         2.5+ years across Python (FastAPI, Flask) and MERN, building scalable platforms — CRM, LMS, CMS — and
                         layering in GenAI: RAG pipelines, OpenAI &amp; Gemini agents, from architecture to deploy.
-                    </p>
+                    </MotionP>
                     <div className="flex gap-4 items-center">
                         <LinkButton text="Get in Touch" href="mailto:devanand151101@gmail.com" varient="fill" />
                         <LinkButton text="View Github" href="https://github.com/Deva0813" arrow />

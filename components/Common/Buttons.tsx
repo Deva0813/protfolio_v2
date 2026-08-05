@@ -14,7 +14,7 @@ type Props = {
 
 export const LinkButton = ({ varient = "outline", ...props }: Props) => {
     return (
-        <Link href={props.href} target="_blank" className={clsx(buttonVariants[varient], ' rounded-full text-sm font-semibold flex gap-3 items-center', props.arrow ? "py-2! pr-2! pl-6!" : "px-6! py-3.5!")}>
+        <Link href={props.href} target="_blank" className={clsx(buttonVariants[varient], ' rounded-full text-sm font-semibold flex gap-3 items-center text-nowrap   ', props.arrow ? "py-2! pr-2! pl-6!" : "px-6! py-3.5!")}>
             {props.text}
             {props.arrow && <span className="block bg-(--accent) text-(--bg) rounded-full p-1!"><ArrowUpRight /></span>}
         </Link>
