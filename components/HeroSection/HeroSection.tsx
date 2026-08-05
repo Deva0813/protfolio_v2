@@ -13,7 +13,7 @@ const HeroSection = (props: Props) => {
                     <span className="inline-flex items-center gap-2 font-mono text-[12.5px] uppercase tracking-[0.08em] text-(--gold) before:h-1.5 before:w-1.5 before:rounded-full before:bg-(--gold) before:shadow-[0_0_8px_var(--gold)] before:content-[''] before:animate-pulse">
                         Chennai, India · Open to opportunities
                     </span>
-                    <h1 className="my-5 font-(family-name:--font-display) text-[clamp(34px,4.6vw,54px)] font-semibold leading-[1.08] tracking-[-0.04em]">
+                    <h1 aria-label="Full stack engineer, shipping AI-native products end to end." className="my-5 font-(family-name:--font-display) text-[clamp(34px,4.6vw,54px)] font-semibold leading-[1.08] tracking-[-0.04em]">
                         {"Full stack engineer,".split(" ").map((word, i) => (
                             <MotionSpan
                                 key={i}
@@ -95,6 +95,8 @@ const HeroSection = (props: Props) => {
                         delay: 1,
                         ease: "easeOut",
                     }}
+                     aria-label=" 2.5+ years across Python (FastAPI, Flask) and MERN, building scalable platforms — CRM, LMS, CMS — and
+                        layering in GenAI: RAG pipelines, OpenAI &amp; Gemini agents, from architecture to deploy."
                         viewport={{ once: true }} className="mb-7 max-w-120 text-[16.5px] text-(--text-muted)">
                         2.5+ years across Python (FastAPI, Flask) and MERN, building scalable platforms — CRM, LMS, CMS — and
                         layering in GenAI: RAG pipelines, OpenAI &amp; Gemini agents, from architecture to deploy.
