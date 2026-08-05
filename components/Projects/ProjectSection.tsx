@@ -1,6 +1,5 @@
-import { projectConstant } from "@/lib/data"
 import Heading from "../Common/Heading"
-import ProjectCard from "./ProjectCard"
+import ProjectList from "./ProjectList"
 
 type Props = {}
 
@@ -13,14 +12,7 @@ const ProjectSection = (props: Props) => {
                     sub_title="Platforms built from architecture to deploy."
                     desc="A mix of work and personal builds."
                 />
-
-                <div className="grid grid-cols-2 gap-5 mt-8">
-                    {
-                        projectConstant.map((item, index) => {
-                            return <ProjectCard {...item} index={index} key={index} />
-                        })
-                    }
-                </div>
+                <ProjectList />
             </div>
         </div>
     )
