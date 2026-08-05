@@ -43,7 +43,7 @@ export function StatusCard() {
             style={{
                 willChange: "transform"
             }}
-            className=" max-w-100 rounded-(--radius) border border-(--border) bg-linear-to-b from-(--surface) to-(--bg-elevated) p-5.5 font-mono text-[13px] shadow-(--shadow-card-sm)">
+            className=" sm:max-w-100 rounded-(--radius) border border-(--border) bg-linear-to-b from-(--surface) to-(--bg-elevated) p-5.5 font-mono text-[13px] shadow-(--shadow-card-sm)">
             <div className="mb-3.5 flex items-center justify-between border-b border-(--border) pb-3.5">
                 <div className="flex items-center gap-2 text-[10.5px] uppercase tracking-[0.08em] text-(--text-dim)">
                     <span className="inline-block h-2 w-2 animate-pulse rounded-full bg-(--accent-strong) shadow-[0_0_10px_var(--accent-strong)" />

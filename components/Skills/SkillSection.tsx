@@ -7,13 +7,13 @@ type Props = {}
 const SkillSection = (props: Props) => {
     return (
         <div id="skills">
-            <div className="section_container grid  sm:px-6 px-4 py-16 gap-5">
+            <div className="section_container grid px-6 py-16 gap-5">
                 <Heading
                     title="Skills"
                     sub_title="The stack, end to end."
                     desc="From database to deployment, every layer I've touched."
                 />
-                <div className="grid grid-cols-3 gap-10 mt-8">
+                <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-10 mt-8">
                     {
                         skillsConstants.map((skill, index) => {
                             return <div className="" key={index}>
