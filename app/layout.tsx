@@ -4,11 +4,10 @@ import type { Metadata } from "next";
 import "./globals.css";
 import Footer from "@/components/Footer";
 
-
-
 export const metadata: Metadata = {
   title: "Deva's Portfolio",
-  description: "Devanand M — Full Stack Engineer | React | Next.js | Node.js | TypeScript | Tailwind CSS",
+  description:
+    "Devanand M — Full Stack Engineer | React | Next.js | Node.js | TypeScript | Tailwind CSS",
   keywords: [
     "Devanand M",
     "Full Stack Engineer",
@@ -19,14 +18,17 @@ export const metadata: Metadata = {
     "Tailwind CSS",
     "2.5+ years",
     "AWS",
-    "Github"
+    "Github",
   ],
-  authors: [{ name: "Devanand M", url: "https://deva0813.github.io/protfolio_v2" }],
+  authors: [
+    { name: "Devanand M", url: "https://deva0813.github.io/protfolio_v2" },
+  ],
   metadataBase: new URL("https://deva0813.github.io"),
   openGraph: {
     type: "website",
     title: "Deva's Portfolio",
-    description: "Devanand M — Full Stack Engineer | React | Next.js | Node.js | TypeScript | Tailwind CSS",
+    description:
+      "Devanand M — Full Stack Engineer | React | Next.js | Node.js | TypeScript | Tailwind CSS",
     url: "https://deva0813.github.io/protfolio_v2",
     siteName: "Deva's Portfolio",
     images: [
@@ -39,7 +41,8 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Deva's Portfolio",
-    description: "Devanand M — Full Stack Engineer | React | Next.js | Node.js | TypeScript | Tailwind CSS",
+    description:
+      "Devanand M — Full Stack Engineer | React | Next.js | Node.js | TypeScript | Tailwind CSS",
     images: ["https://deva0813.github.io/protfolio_v2/meta.png"],
   },
   icons: {
@@ -55,7 +58,7 @@ const themeScript = `
     document.documentElement.classList.add(t);
   }catch(e){ document.documentElement.classList.add('dark'); }
 })();
-`
+`;
 
 export default function RootLayout({
   children,
@@ -74,8 +77,8 @@ export default function RootLayout({
       <body className="min-h-full flex flex-col">
         <Navbar />
         {children}
-        <Footer/>
-        </body>
+        <Footer />
+      </body>
     </html>
   );
 }
