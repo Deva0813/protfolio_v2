@@ -10,7 +10,7 @@ type Props = {}
 
 const ProjectList = (props: Props) => {
     const ref = useRef<HTMLDivElement>(null)
-    const inView = useInView(ref)
+    const inView = useInView(ref,{once:true})
     return (
         <div ref={ref} className="grid grid-cols-2 gap-5 mt-8">
             {
@@ -24,7 +24,7 @@ const ProjectList = (props: Props) => {
                             delay: (index * 0.2),
                             ease: "easeOut",
                         }}
-                        viewport={{ once: true }}
+                        
                         key={index}>
                         <ProjectCard {...item} index={index} key={index} />
                     </Motiondiv>

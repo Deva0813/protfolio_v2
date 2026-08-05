@@ -24,7 +24,7 @@ const SkillSection = (props: Props) => {
 
                                             transition={{
                                                 duration: 0.5,
-                                                delay: (i * 0.1),
+                                                delay: (i * (1/(skill.skills.length))),
                                                 ease: "easeOut",
                                             }}
                                             viewport={{ once: true }}
