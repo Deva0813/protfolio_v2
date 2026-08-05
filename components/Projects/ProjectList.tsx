@@ -12,7 +12,7 @@ const ProjectList = (props: Props) => {
     const ref = useRef<HTMLDivElement>(null)
     const inView = useInView(ref,{once:true})
     return (
-        <div ref={ref} className="grid grid-cols-2 gap-5 mt-8">
+        <div ref={ref} className="grid sm:grid-cols-2 gap-5 mt-8">
             {
                 projectConstant.map((item, index) => {
                     return <Motiondiv initial={{ y: 30, opacity: 0 }} animate={{

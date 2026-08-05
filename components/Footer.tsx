@@ -20,7 +20,7 @@ const Footer = (props: Props) => {
     ]
     return (
         <div className='border-t border-(--border)'>
-            <div className="section_container flex justify-between text-sm py-8 px-6 text-(--text-dim)">
+            <div className="section_container flex max-sm:flex-col gap-4 justify-between text-sm py-8 px-6 text-(--text-dim)">
                 <div className="">
                     © {year} Devanand M. Built with care, deployed with confidence.
                 </div>

@@ -5,8 +5,8 @@ type Props = {}
 
 const ProjectSection = (props: Props) => {
     return (
-        <div className='bg-(--bg-elevated) border-y border-(--border)' id="projects" >
-            <div className="section_container grid  sm:px-6 px-4 py-16 gap-5">
+        <div className='bg-(--bg-elevated) border-y border-(--border) scroll-mt-17.75!' id="projects" >
+            <div className="section_container grid px-6 py-16 gap-5">
                 <Heading
                     title="Projects"
                     sub_title="Platforms built from architecture to deploy."

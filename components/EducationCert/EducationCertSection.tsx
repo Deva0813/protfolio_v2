@@ -6,8 +6,8 @@ type Props = {}
 
 const EducationCertSection = (props: Props) => {
     return (
-        <div id="education" className='bg-(--bg-elevated) border-y border-(--border)'>
-            <div className="section_container grid  sm:px-6 px-4 py-16 gap-5">
+        <div id="education" className='bg-(--bg-elevated) border-y border-(--border) scroll-mt-17.75!'>
+            <div className="section_container grid px-6 py-16 gap-5">
                 <Heading
                     title="Education & Certifications"
                     sub_title="Foundations, formalized."
