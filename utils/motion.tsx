@@ -1,8 +1,8 @@
-"use client"
+"use client";
 
-import { AnimatePresence, motion } from "motion/react"
+import { AnimatePresence, motion } from "motion/react";
 
-export const Motiondiv =  motion.div
-export const MotionSpan = motion.span
-export const MotionP = motion.p
-export const MotionAnimatePresence = AnimatePresence
+export const Motiondiv = motion.div;
+export const MotionSpan = motion.span;
+export const MotionP = motion.p;
+export const MotionAnimatePresence = AnimatePresence;
