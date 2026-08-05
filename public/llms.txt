@@ -1,0 +1,53 @@
+# Deva's Portfolio
+
+> Devanand M — Full Stack Engineer (React, Next.js, Node.js, TypeScript, Tailwind CSS) based in Chennai, India. 2.5+ years across Python (FastAPI, Flask) and MERN, building scalable platforms (CRM, LMS, CMS) and GenAI features (RAG pipelines, OpenAI & Gemini agents) end to end.
+
+Devanand is currently Tech Lead, Python Full Stack at i2Global Virtual Learning, open to full-stack and AI-engineering roles.
+
+## Profile
+
+- Location: Chennai, India
+- Email: devanand151101@gmail.com
+- Phone: +91 9176204928
+- GitHub: https://github.com/Deva0813
+- LinkedIn: https://www.linkedin.com/in/devanand-m-9a22351b3
+- Old Portfolio: https://deva0813.github.io/portfolio/
+
+## Experience
+
+- Tech Lead, Python Full Stack — i2Global Virtual Learning Pvt. Ltd., Chennai/Bangalore (Feb 2025 – Jan 2026): Led a team of 2–6 engineers building a CRM Hub (replacing HubSpot/Privyr), GenAI/RAG pipelines, FastAPI/Flask backends on MongoDB/Celery/Redis, Next.js frontends, and AWS infra (EC2, SES, Auto Scaling).
+- Full Stack Engineer — i2Global Virtual Learning Pvt. Ltd., Chennai (Apr 2024 – Jan 2025): Architected a CMS and ticket management platform (Next.js, Flask), built REST APIs, deployed on AWS, built SEO marketing pages.
+- Jr. Web Developer — i2Global Virtual Learning Pvt. Ltd., Chennai (Feb 2024 – Mar 2024): Built 10+ SEO-optimized landing pages in Next.js; integrated GTM, Meta Pixel, HubSpot CRM.
+- Full Stack Developer Intern (MERN) — Pixamentory, Remote (Jun 2023 – Feb 2024): Built end-to-end SaaS platforms in Next.js and Express.js.
+- Digital Engineer Intern (Java Full Stack) — Virtusa Consulting Service Pvt. Ltd., Chennai (Jan 2023 – Apr 2023): Built a full-stack IAS portal in React.js and Spring Boot.
+
+## Projects
+
+- AI Learning Platform: AI-powered e-learning platform with OpenAI-generated content/assessments, Razorpay payments, Celery/Redis. Stack: Next.js, FastAPI, MongoDB, OpenAI, Razorpay, AWS.
+- Lead Management Platform: Centralized CRM capturing leads from Meta Ads/web forms with round-robin allocation and ETL pipelines. Stack: Next.js, FastAPI, MongoDB, Redis, GenAI, ETL.
+- Support & Ticketing Platform: Helpdesk with automated SLA/TAT alerts and schedulers. Stack: Next.js, Flask, MySQL, Google AppScript.
+- Pigeon: SaaS admin panel for gaming communication/friend management within the Unity engine. Stack: Next.js, Express.js, MongoDB, AWS.
+- Real-time Sign Language Translator: Virtual-camera plugin bridging communication via object detection, works in any video conferencing app. Stack: Flask, Deep Learning, Computer Vision, ML.
+
+## Skills
+
+- Languages & Markup: Python, TypeScript, JavaScript, Java, HTML5
+- Frontend: React.js, Next.js, Recharts, Motion, Tailwind CSS, React Query, Zustand
+- Backend & APIs: FastAPI, Flask, Express.js, Celery, OAuth, REST APIs
+- Databases & Caching: MySQL, MongoDB, Redis, RDS
+- Cloud & DevOps: AWS, Docker, CI/CD, Git, GitHub, Jira, EC2, SES, S3, Amplify
+- Data & Distributed Processing: PySpark, ETL pipelines
+- AI & LLM Engineering: OpenAI, Claude Code, RAG, AI Agent Workflows, LLM, LangChain
+- Automation & Analytics: n8n, Windsor.ai, Google Analytics, GTM, Meta CAPI
+
+## Education & Certifications
+
+- B.E. Computer Science & Engineering — Vel Tech Multi Tech Dr. Rangarajan Dr. Sakunthala Engineering College, 9.09 GPA (2019–2023)
+- HSC — Ramakrishna Mission Matriculation HSS, 72% (2018–2019)
+- SSLC — Ramakrishna Mission Matriculation HSS, 84.4% (2016–2017)
+- AI Engineer Core Track (LLM Engineering, RAG, QLoRA, Agents) — Udemy (2026)
+- Introduction to Agent Skills — Anthropic (2026)
+- Oracle Certified Java Associate — Oracle (2023)
+- Nalaiyathiran — IBM & ICT Academy (2023)
+- The Complete 2022 Web Development Bootcamp — Udemy (2022)
+- 100 Days of Code: Python Pro Bootcamp — Udemy (2022)
