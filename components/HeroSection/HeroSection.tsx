@@ -7,7 +7,7 @@ type Props = {}
 
 const HeroSection = (props: Props) => {
     return (
-        <div className='' >
+        <div className='scroll-mt-17.75!' >
             <div className="section_container grid sm:grid-cols-2 px-6 py-16 max-sm:gap-16 max-md:gap-4">
                 <div className="">
                     <span className="inline-flex items-center gap-2 font-mono text-[12.5px] uppercase tracking-[0.08em] text-(--gold) before:h-1.5 before:w-1.5 before:rounded-full before:bg-(--gold) before:shadow-[0_0_8px_var(--gold)] before:content-[''] before:animate-pulse">

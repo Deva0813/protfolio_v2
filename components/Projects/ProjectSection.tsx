@@ -5,7 +5,7 @@ type Props = {}
 
 const ProjectSection = (props: Props) => {
     return (
-        <div className='bg-(--bg-elevated) border-y border-(--border)' id="projects" >
+        <div className='bg-(--bg-elevated) border-y border-(--border) scroll-mt-17.75!' id="projects" >
             <div className="section_container grid px-6 py-16 gap-5">
                 <Heading
                     title="Projects"

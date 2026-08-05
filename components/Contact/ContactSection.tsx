@@ -4,7 +4,7 @@ type Props = {}
 
 const ContactSection = (props: Props) => {
     return (
-        <div className="" id="contact">
+        <div className="scroll-mt-17.75!" id="contact">
 
             <div className="section_container grid  px-6 py-16 gap-5 ">
                 <div className="rounded-3xl border border-(--border) bg-(--surface) p-14 max-sm:p-8 flex flex-col gap-4 items-center">

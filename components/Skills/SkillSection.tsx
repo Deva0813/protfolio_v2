@@ -6,7 +6,7 @@ type Props = {}
 
 const SkillSection = (props: Props) => {
     return (
-        <div id="skills">
+        <div id="skills" className='scroll-mt-17.75!'>
             <div className="section_container grid px-6 py-16 gap-5">
                 <Heading
                     title="Skills"
