@@ -6,7 +6,7 @@ const ContactSection = (props: Props) => {
   return (
     <div className="scroll-mt-17.75!" id="contact">
       <div className="section_container grid  px-6 py-16 gap-5 ">
-        <div className="rounded-3xl border border-(--border) bg-(--surface) p-14 max-sm:p-8 flex flex-col gap-4 items-center">
+        <div className="rounded-3xl border border-(--border) bg-(--surface) p-14 max-sm:p-6 flex flex-col gap-4 items-center">
           <p className="inline-flex w-fit   items-center gap-2 font-mono text-[12.5px] uppercase tracking-[0.08em] text-(--gold) before:h-1.5 before:w-1.5 before:rounded-full before:bg-(--gold) before:shadow-[0_0_8px_var(--gold)] before:content-[''] before:animate-pulse">
             Let's Talk
           </p>
