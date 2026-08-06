@@ -16,6 +16,6 @@ const nextConfig: NextConfig = {
     : {}),
 };
 
-// serve - mkdir serve_root , cp -r out serve_root/portfolio_v2, npx serve serve_root -l 3000
+// serve - mkdir serve_root , cp -r out serve_root/portfolio_v2, npx serve serve_root -l 3000 
 
 export default nextConfig;
