@@ -67,7 +67,7 @@ export function StatusCard() {
         >
             <div className="*:absolute *:top-0  *:left-1/2">
                 <Image
-                    src={"/animated_1.png"}
+                    src={"/portfolio_v2/animated_1.webp"}
                     alt="mascot"
                     width={772 * 0.3}
                     height={657 * 0.3}
@@ -79,7 +79,7 @@ export function StatusCard() {
                 />
 
                 <Image
-                    src={"/animated_2.png"}
+                    src={"/portfolio_v2/animated_2.webp"}
                     alt="mascot"
                     width={1109 * 0.26}
                     height={944 * 0.26}
