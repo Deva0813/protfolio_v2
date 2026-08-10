@@ -26,7 +26,10 @@ const Stats = (props: Props) => {
     const { data: user2 } = useQuery({
         queryKey: ["user2"],
         queryFn: async () => {
-            const res = await fetch("https://api.github.com/users/deva0813")
+            const res = await fetch("https://api.github.com/users/deva0813",{
+                mode:"no-cors",
+                cache:"no-store"
+            })
             return res.json()
         }
     })
