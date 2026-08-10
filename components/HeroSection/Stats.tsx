@@ -3,16 +3,36 @@ import { statsConstants } from '@/lib/data';
 import { totalContributions } from '@/lib/github';
 import { formatCount } from '@/lib/helper';
 import { useQuery } from '@tanstack/react-query';
+import axios from 'axios';
 
 type Props = {}
 
- 
+
 const Stats = (props: Props) => {
 
     const { data } = useQuery({
         queryKey: ['user_data'], queryFn: totalContributions, staleTime: 60 * 1000,
-        gcTime:  60 * 1000,
+        gcTime: 60 * 1000,
     })
+
+    const { data: user } = useQuery({
+        queryKey: ["user"],
+        queryFn: async () => {
+            const res = await axios.get("https://api.github.com/users/deva0813")
+            return res.data
+        }
+    })
+
+    const { data: user2 } = useQuery({
+        queryKey: ["user2"],
+        queryFn: async () => {
+            const res = await fetch("https://api.github.com/users/deva0813")
+            return res.json()
+        }
+    })
+
+    console.log(user, "axios");
+    console.log(user2, "fetch");
 
     return (
         <div className="border-y border-(--border)">
