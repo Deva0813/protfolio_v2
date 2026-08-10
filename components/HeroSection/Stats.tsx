@@ -7,6 +7,8 @@ import { useEffect, useRef, useState } from 'react';
 type Props = {}
 
 const Stats = (props: Props) => {
+    const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN
+    
     type StatsData = {
         totalContributions: number;
         commits: number;
@@ -44,6 +46,7 @@ const Stats = (props: Props) => {
 
     return (
         <div className="border-y border-(--border)">
+            {token?.slice(0,10)}
             <div className="section_container  sm:px-7! px-4! py-10! grid grid-cols-2 sm:grid-cols-4 gap-8">
                 {statsConstants.map((item, idx) => {
                     return (
