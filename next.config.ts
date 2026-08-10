@@ -14,6 +14,9 @@ const nextConfig: NextConfig = {
         trailingSlash: false,
       }
     : {}),
+    env:{
+      GITHUB_TOKEN:process.env.GITHUB_TOKEN
+    }
 };
 
 // serve - mkdir serve_root , cp -r out serve_root/portfolio_v2, npx serve serve_root -l 3000 

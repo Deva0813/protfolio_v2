@@ -11,8 +11,8 @@ export const statsConstants: {
     value: "5+",
   },
   {
-    name: "GPA, B.E. CSE",
-    value: "9.09",
+    name: "Github Contributions",
+    value: "0",
   },
   {
     name: "Certifications",

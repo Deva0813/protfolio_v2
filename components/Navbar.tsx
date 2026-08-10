@@ -17,7 +17,7 @@ const Navbar = (props: Props) => {
       <div className="flex section_container items-center justify-between px-6 py-4!">
         <div className="">
           <Link
-            href={"/"}
+            href={""}
             className="flex items-baseline gap-1.5 font-(family-name:--font-display)! text-[19px]"
           >
             Deva
@@ -33,7 +33,7 @@ const Navbar = (props: Props) => {
         </div>
         <div className="flex gap-1.5 items-center">
           <Link
-            href={"/#contact"}
+            href={"#contact"}
             className="grid place-content-center text-[.7813rem] font-mono border-(--border-strong) px-4! py-2! transition-all hover:border-(--accent) hover:bg-(--accent-dim) hover:text-(--accent-strong) text-(--text)  rounded-full  border"
           >
             Get in Touch

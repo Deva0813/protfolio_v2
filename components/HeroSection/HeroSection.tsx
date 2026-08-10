@@ -1,6 +1,6 @@
-import { statsConstants } from "@/lib/data";
 import { MotionP, MotionSpan } from "@/utils/motion";
 import { LinkButton } from "../Common/Buttons";
+import Stats from "./Stats";
 import { StatusCard } from "./StatusCard";
 
 type Props = {};
@@ -130,20 +130,7 @@ const HeroSection = (props: Props) => {
           <StatusCard />
         </div>
       </div>
-      <div className="border-y border-(--border)">
-        <div className="section_container  sm:px-7! px-4! py-10! grid grid-cols-2 sm:grid-cols-4 gap-8">
-          {statsConstants.map((item, idx) => {
-            return (
-              <div className="text-center grid gap-3" key={idx}>
-                <p className="text-4xl text-(--accent-strong) font-semibold font-(family-name:--font-display)">
-                  {item.value}
-                </p>
-                <p className="text-xs text-(--text-dim)">{item.name}</p>
-              </div>
-            );
-          })}
-        </div>
-      </div>
+      <Stats />
     </div>
   );
 };
