@@ -1,4 +1,5 @@
 "use client";
+import { imgPath } from "@/lib/helper";
 import { Motiondiv } from "@/utils/motion";
 import Image from "next/image";
 import { useEffect, useState } from "react";
@@ -67,7 +68,7 @@ export function StatusCard() {
         >
             <div className="*:absolute *:top-0  *:left-1/2">
                 <Image
-                    src={"/portfolio_v2/animated_1.webp"}
+                    src={imgPath("/animated_1.webp")}
                     alt="mascot"
                     width={772 * 0.3}
                     height={657 * 0.3}
@@ -79,7 +80,7 @@ export function StatusCard() {
                 />
 
                 <Image
-                    src={"/portfolio_v2/animated_2.webp"}
+                    src={imgPath("/animated_2.webp")}
                     alt="mascot"
                     width={1109 * 0.26}
                     height={944 * 0.26}
