@@ -36,6 +36,8 @@ const Stats = (props: Props) => {
                 if (mounted.current && res) setData(res);
             } catch (e) {
                 // swallow - keep defaults
+                console.log(e);
+                
             }
         })();
 

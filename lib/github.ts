@@ -32,6 +32,7 @@ async function graphql(token: string, query: string, variables: object) {
             "Content-Type": "application/json",
         },
         body: JSON.stringify({ query, variables }),
+        cache:"no-store"
     });
 
     if (!res.ok) throw new Error(`GitHub GraphQL error: ${res.status}`);
@@ -99,6 +100,8 @@ export async function userData() {
             repositoriesContributedTo: number,
         };
     } catch (err) {
+        console.log(err);
+        
         return empty as {
             totalContributions: number,
             commits: number,
