@@ -41,7 +41,7 @@ async function graphql(token: string, query: string, variables: object) {
 }
 
 export async function userData() {
-    const token = process.env.GITHUB_TOKEN;
+    const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN;
 
     const empty = {
         totalContributions: 0,
