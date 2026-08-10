@@ -14,9 +14,7 @@ const nextConfig: NextConfig = {
       trailingSlash: false,
     }
     : {}),
-  env: {
-    NEXT_PUBLIC_GITHUB_TOKEN: process.env.NEXT_PUBLIC_GITHUB_TOKEN
-  },
+
   reactStrictMode: true,
 };
 
