@@ -12,7 +12,7 @@ export const statsConstants: {
   },
   {
     name: "Github Contributions",
-    value: "0",
+    value: "3001",
   },
   {
     name: "Certifications",
