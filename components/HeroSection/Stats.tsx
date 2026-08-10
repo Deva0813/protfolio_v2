@@ -1,67 +1,35 @@
 "use client"
 import { statsConstants } from '@/lib/data';
-import { userData } from '@/lib/github';
+import { totalContributions } from '@/lib/github';
 import { formatCount } from '@/lib/helper';
-import { useEffect, useRef, useState } from 'react';
+import { useQuery } from '@tanstack/react-query';
 
 type Props = {}
 
+ 
 const Stats = (props: Props) => {
-    const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN || "dummy"
-    
-    type StatsData = {
-        totalContributions: number;
-        commits: number;
-        pullRequests: number;
-        issues: number;
-        repositoriesContributedTo: number;
-    };
 
-    const [data, setData] = useState<StatsData>({
-        totalContributions: 0,
-        commits: 0,
-        pullRequests: 0,
-        issues: 0,
-        repositoriesContributedTo: 0,
-    });
-
-    const mounted = useRef(true);
-
-    useEffect(() => {
-        mounted.current = true;
-
-        (async () => {
-            try {
-                const res = await userData();
-                if (mounted.current && res) setData(res);
-            } catch (e) {
-                // swallow - keep defaults
-                console.log(e);
-                
-            }
-        })();
-
-        return () => {
-            mounted.current = false;
-        };
-    }, []);
+    const { data } = useQuery({
+        queryKey: ['user_data'], queryFn: totalContributions, staleTime: 60 * 1000,
+        gcTime:  60 * 1000,
+    })
 
     return (
         <div className="border-y border-(--border)">
-           
+
             <div className="section_container  sm:px-7! px-4! py-10! grid grid-cols-2 sm:grid-cols-4 gap-8">
                 {statsConstants.map((item, idx) => {
                     return (
                         <div className="text-center grid gap-3" key={idx}>
                             <p className="text-4xl text-(--accent-strong) font-semibold font-(family-name:--font-display)">
-                                {item.name == "Github Contributions" ? formatCount(data ? data.totalContributions : 0) : item.value}
+                                {item.name == "Github Contributions" ? formatCount(data ? data : 3016) : item.value}
                             </p>
                             <p className="text-xs text-(--text-dim)">{item.name}</p>
                         </div>
                     );
                 })}
             </div>
-            <span className='text-xs'> {token?.slice(0,10)}</span>
+
         </div>
     )
 }

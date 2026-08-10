@@ -1,8 +1,9 @@
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
+import ReactQueryProvider from "@/components/Providers/ReactQueryProvider";
 import { fraunces, inter, jetbrainsMono } from "@/lib/fonts";
 import type { Metadata } from "next";
 import "./globals.css";
-import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Deva's Portfolio",
@@ -75,9 +76,13 @@ export default function RootLayout({
         <script dangerouslySetInnerHTML={{ __html: themeScript }} />
       </head>
       <body className="min-h-full flex flex-col">
+
         <Navbar />
-        {children}
+        <ReactQueryProvider>
+          {children}
+        </ReactQueryProvider>
         <Footer />
+
       </body>
     </html>
   );
