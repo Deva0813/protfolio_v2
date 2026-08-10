@@ -6,17 +6,18 @@ const repositoryName = "portfolio_v2";
 const nextConfig: NextConfig = {
   ...(isProd
     ? {
-        output: "export",
-        images: {
-          unoptimized: true,
-        },
-        basePath: `/${repositoryName}`,
-        trailingSlash: false,
-      }
-    : {}),
-    env:{
-      NEXT_PUBLIC_GITHUB_TOKEN:process.env.NEXT_PUBLIC_GITHUB_TOKEN
+      output: "export",
+      images: {
+        unoptimized: true,
+      },
+      basePath: `/${repositoryName}`,
+      trailingSlash: false,
     }
+    : {}),
+  env: {
+    NEXT_PUBLIC_GITHUB_TOKEN: process.env.NEXT_PUBLIC_GITHUB_TOKEN
+  },
+  reactStrictMode: true,
 };
 
 // serve - mkdir serve_root , cp -r out serve_root/portfolio_v2, npx serve serve_root -l 3000 
