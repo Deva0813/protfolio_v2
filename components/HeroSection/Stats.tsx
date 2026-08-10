@@ -7,7 +7,7 @@ import { useEffect, useRef, useState } from 'react';
 type Props = {}
 
 const Stats = (props: Props) => {
-    const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN
+    const token = process.env.NEXT_PUBLIC_GITHUB_TOKEN || "dummy"
     
     type StatsData = {
         totalContributions: number;
@@ -36,6 +36,8 @@ const Stats = (props: Props) => {
                 if (mounted.current && res) setData(res);
             } catch (e) {
                 // swallow - keep defaults
+                console.log(e);
+                
             }
         })();
 
@@ -46,7 +48,7 @@ const Stats = (props: Props) => {
 
     return (
         <div className="border-y border-(--border)">
-            {token?.slice(0,10)}
+           
             <div className="section_container  sm:px-7! px-4! py-10! grid grid-cols-2 sm:grid-cols-4 gap-8">
                 {statsConstants.map((item, idx) => {
                     return (
@@ -59,6 +61,7 @@ const Stats = (props: Props) => {
                     );
                 })}
             </div>
+            <span className='text-xs'> {token?.slice(0,10)}</span>
         </div>
     )
 }
